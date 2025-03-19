@@ -1,43 +1,88 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-	line-height: 1;
+  /* height: 100vh; */
+  margin: 0;
+  position: relative;
 }
-ol, ul {
-	list-style: none;
+.partner_scroll {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
 }
-blockquote, q {
-	quotes: none;
+
+.partner_scroll:before,
+.partner_scroll:after {
+  position: absolute;
+  top: 0;
+  content: '';
+  z-index: 1;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+.partner_logo {
+  box-sizing: border-box;
+  display: inline-block;
+  animation: 15s slide infinite linear;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+
+.swiper-slide {
+  text-align: center;
+  font-size: 1.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-right: 1.25rem; */
+}
+
+.partner_scroll {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+.partner_scroll:before,
+.partner_scroll:after {
+  position: absolute;
+  top: 0;
+  content: '';
+  z-index: 1;
+}
+
+.partner_logo {
+  box-sizing: border-box;
+  display: inline-block;
+  animation: 15s slide infinite linear;
+}
+
+/* @ Style nút cuộn lên đầu trang  */
+.button_scroll {
+  position: fixed;
+  bottom: 1rem;
+  right: 0.2rem;
+  z-index: 10;
+}
+.button_call {
+  position: fixed;
+  bottom: 12rem;
+  right: 0.2rem;
+  z-index: 10;
+}
+.button_mail {
+  position: fixed;
+  bottom: 5rem;
+  right: 0.2rem;
+  z-index: 10;
+}
+
+.__react_modal_image__header {
+  background-color: transparent !important;
+}
+.ant-tabs-nav {
+  margin: auto !important;
+}
+
+#collapse-demo-collapsible .ant-space {
+  width: 100%;
 }

@@ -1,3 +1,40 @@
+@import 'flowbite';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    overflow-x: hidden;
+  }
+}
+/* body {
+  @apply font-mulish;
+} */
+
+.style-address {
+  @apply mb-3 font-bold uppercase text-white;
+}
+
+/* style thẻ h2 của các section */
+.base_title {
+  @apply my-6 text-center text-3xl font-bold text-[#2582BD] lg:my-14 lg:text-4xl;
+}
+
+/* @Style logo các đối tác  */
+@keyframes slide {
+  from {
+    transform: translateX(-5%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.ant-card-body {
+  padding: 12px !important;
+}

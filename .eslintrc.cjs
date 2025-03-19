@@ -1,6 +1,9 @@
-// Sample Eslint config for React project
 module.exports = {
-  env: {browser: true, es2020: true, node: true},
+  env: {
+    browser: true,
+    es2021: true,
+    node: true,
+  },
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
@@ -8,28 +11,34 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:prettier/recommended',
   ],
-  parserOptions: {ecmaVersion: 'latest', sourceType: 'module'},
-  settings: {react: {version: '18.2'}},
-  plugins: ['react', 'react-hooks', 'react-refresh'],
+  parserOptions: {
+    ecmaVersion: 2021,
+    sourceType: 'module',
+  },
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
+  plugins: ['react', 'react-hooks'],
   rules: {
-    'react-refresh/only-export-components': 'warn',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
-    'react/prop-types': 0,
-    'react/display-name': 0,
-    'no-console': 1,
-    'no-lonely-if': 1,
-    'no-unused-vars': 1,
+    'react/prop-types': 'off',
+    'react/display-name': 'off',
+    'no-console': 'warn',
+    'no-lonely-if': 'warn',
+    'no-unused-vars': 'warn',
     'space-before-blocks': ['error', 'always'],
     indent: ['warn', 2],
-    semi: [1, 'never'],
+    semi: ['warn', 'never'],
     quotes: ['error', 'single'],
-    'array-bracket-spacing': 1,
-    'linebreak-style': 0,
-    'keyword-spacing': 1,
-    'comma-dangle': 1,
-    'comma-spacing': 1,
-    'arrow-spacing': 1,
+    'array-bracket-spacing': 'warn',
+    'linebreak-style': 'off',
+    'keyword-spacing': 'warn',
+    'comma-dangle': 'warn',
+    'comma-spacing': 'warn',
+    'arrow-spacing': 'warn',
     'id-match': [
       'error',
       '^[a-z][a-zA-Z0-9]*$', // Quy tắc camelCase

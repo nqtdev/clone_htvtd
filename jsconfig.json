@@ -8,7 +8,8 @@
       "layout/*": ["layout/*"],
       "pages/*": ["pages/*"],
       "routes/*": ["routes/*"],
-      "utils/*": ["utils/*"]
+      "utils/*": ["utils/*"],
+      "data/*": ["data/*"]
     }
   }
 }

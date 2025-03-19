@@ -1,0 +1,2 @@
+*.zip filter=lfs diff=lfs merge=lfs -text
+public/checkid_client_installer.zip filter=lfs diff=lfs merge=lfs -text

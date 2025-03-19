@@ -15,10 +15,22 @@ export default {
       xxl: '1600px',
     },
     extend: {
+      colors: {
+        'main-colors': '#2582BD',
+        'main-bgcolors': '#182441',
+        'main-table': '#adb7c2',
+      },
+      fontFamily: {
+        roboto: ['Roboto', 'sans-serif'],
+        mulish: ['Mulish', 'sans-serif'],
+        soro: ['Soro', 'sans-serif'],
+      },
       backgroundImage: {
         'radial-gradient-custom': 'radial-gradient(circle at 0% 0%, #cdffd8, #94b9ff)',
+        'bg-img': "url('/src/assets/page_RarEkyc/section_content_b/background_section.png')",
+        'bg-img-product': " url('/src/assets/image_products/background_products.png')",
       },
     },
   },
-  plugins: [flowbite.plugin()],
+  plugins: [flowbite.plugin(), require('tailwindcss-animated')],
 }

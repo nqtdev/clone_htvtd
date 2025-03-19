@@ -2,9 +2,9 @@
 import {defineConfig} from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path' // Import the path module
-
 export default defineConfig({
   plugins: [react()],
+  assetsInclude: ['**/*.zip', '**/*.exe'],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'), // Alias for src
@@ -15,6 +15,7 @@ export default defineConfig({
       routes: path.resolve(__dirname, 'src/routes'), // Alias for routes
       utils: path.resolve(__dirname, 'src/utils'), // Alias for utils
       assets: path.resolve(__dirname, 'src/assets'), // Alias for assets
+      data: path.resolve(__dirname, 'src/data'), // Alias for assets
     },
   },
 })
